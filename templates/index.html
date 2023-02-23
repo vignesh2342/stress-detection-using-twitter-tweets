@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stress Detection</title>
+  </head>
+  <body
+    background="./static/tim-gouw-1K9T5YiZ2WU-unsplash.jpg"
+    style="background-repeat: no-repeat; background-size: cover"
+  >
+    <center>
+      <br /><br /><br />
+      <h1 style="color: floralwhite; font-size: 4rem">
+        welcome to the stress detection system...!
+      </h1>
+      <br /><br /><br />
+      <form action="POST">
+        <label
+          style="
+            color: floralwhite;
+            font-size: xx-large;
+            font-style: Montserrat;
+          "
+          for=""
+          >Name</label
+        >
+        <input
+          style="
+            color: rgb(13, 12, 10);
+            font-size: xx-large;
+            font-style: Montserrat;
+          "
+          type="text"
+        /><br /><br /><br />
+        <label
+          style="
+            color: floralwhite;
+            font-size: xx-large;
+            font-style: Montserrat;
+            padding-right: 26px;
+          "
+          for=""
+          >Age</label
+        >
+        <input
+          style="
+            color: rgb(12, 11, 9);
+            font-size: xx-large;
+            font-style: Montserrat;
+          "
+          type="int"
+          name="age"
+        /><br /><br /><br />
+        <label for="" style="color: floralwhite; font-size: xx-large"
+          >Gender</label
+        >
+        <select class="form-control" style="font-size: xx-large">
+          <option>Male</option>
+          <option>Female</option>
+          <option>Others</option>
+        </select>
+      </form>
+      <br /><br /><br />
+      <a href="{{url_for('tweets')}}"
+        ><button style="font-size: xx-large">next</button></a
+      >
+    </center>
+  </body>
+</html>

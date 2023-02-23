@@ -1,0 +1,81 @@
+<html>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous"
+  />
+
+  <body
+    background="./static/tim-gouw-1K9T5YiZ2WU-unsplash.jpg"
+    style="background-repeat: no-repeat; background-size: cover"
+  >
+    <form action="{{ url_for('tweets_results') }}" method="POST" name="form">
+      <br />
+      <br />
+      <br /><br /><br />
+      <center>
+        <h1
+          style="
+            color: floralwhite;
+            background-color: crimson;
+            width: 700px;
+            height: 65px;
+            padding-top: 12px;
+          "
+        >
+          Stress Detection using Tweets
+        </h1>
+        <br /><br /><br />
+        <div class="form-group">
+          <h1>
+            <label for="tweet" style="color: floralwhite; font-size: 3rem"
+              >Enter a tweet to detect</label
+            >
+          </h1>
+          <br />
+          <input
+            style="
+              color: rgb(13, 12, 10);
+              font-size: xx-large;
+              font-style: Montserrat;
+            "
+            placeholder="tweet text"
+            type="text"
+            name="text-input"
+          /><br /><br />
+        </div>
+
+        <br /><br /><button
+          style="font-size: 30px; color: floralwhite; background-color: crimson"
+          type="submit"
+          class="btn btn-primary btn-sm"
+        >
+          Submit
+        </button>
+      
+    </form>
+    <br><br>
+    <h1 name="result" style="color: floralwhite;
+    background-color: crimson;
+    width: 700px;
+    height: 65px;
+    padding-top: 12px;">{{pred}}</h1>
+  </center>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
